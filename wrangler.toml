@@ -1,0 +1,12 @@
+name = "podfy-godmode"
+pages_build_output_dir = "public"
+
+[vars]
+# These are fine as plain (non-secret) vars for local/dev. In production you’ll set them in Pages UI too.
+COOKIE_NAME = "sida"
+COOKIE_DOMAIN = "godmode.podfy.net"
+COOKIE_MAX_AGE = "7200"
+MAIL_PROVIDER = "resend"
+MAIL_FROM = "no-reply@podfy.net"
+
+# DO NOT put JWT_SECRET or provider API keys here. Those stay as encrypted “Secrets” in Cloudflare.
